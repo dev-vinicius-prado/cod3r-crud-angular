@@ -44,13 +44,18 @@ let vogals = ['a', 'e', 'i', 'o', 'u']
 
 let fruitStartedWithVogals = fruitList.filter((fruit) => vogals.includes(fruit.charAt(0).toLowerCase()))
 let fruitStartedWithoutVogals = fruitList.filter((fruit) => !vogals.includes(fruit.charAt(0).toLowerCase()))
-
 let fruitStartWithLetterO = fruitList.find((fruit) => fruit.startsWith('O'))
+
+let numbers = [1,2,4,3,5,6,7,8,9]
+
+let total = numbers.reduce((value, num) => value + num)
 
 console.log(noTypedArray);
 console.log(fruitList);
 console.log('Filter fruits that name start with a vogal:', fruitStartedWithVogals);
 console.log('Filter fruits that name start with a consonant:',fruitStartedWithoutVogals);
 console.log('Find the fruit that name start with the letter "O":',fruitStartWithLetterO);
+console.log('The sum of all numbers is:', total);
+
 
 
