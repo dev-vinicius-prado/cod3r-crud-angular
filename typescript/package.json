@@ -1,0 +1,26 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-vinicius-prado/angular.git"
+  },
+  "keywords": [
+    "Typescript",
+    "Angular"
+  ],
+  "author": "Vinicius Prado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dev-vinicius-prado/angular/issues"
+  },
+  "homepage": "https://github.com/dev-vinicius-prado/angular#readme",
+  "dependencies": {
+    "typescript": "^5.3.3"
+  }
+}
