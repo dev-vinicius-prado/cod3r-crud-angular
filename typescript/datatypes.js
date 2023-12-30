@@ -17,3 +17,18 @@ if (age > 30) {
     isValid = true;
 }
 console.log(isValid);
+// array
+let emptyArray = [];
+// declaring a empty array
+let noTypedArray = [1, 'a', false, 12.4];
+// declaring a no typed array. It allow adding any type item
+let fruitList;
+// declaring a empty list of fruits. Only string type will be allowed in this array.
+fruitList = ['Banana', 'Apple', 'Strawberry', 'Orange', 'Lemon'];
+let vogals = ['a', 'e', 'i', 'o', 'u'];
+let fruitStartedWithVogals = fruitList.filter((fruit) => vogals.includes(fruit.charAt(0).toLowerCase()));
+let fruitStartedWithoutVogals = fruitList.filter((fruit) => !vogals.includes(fruit.charAt(0).toLowerCase()));
+console.log(noTypedArray);
+console.log(fruitList);
+console.log('Filter fruits that name start with a vogal:', fruitStartedWithVogals);
+console.log('Filter fruits that name start with a consonant:', fruitStartedWithoutVogals);
