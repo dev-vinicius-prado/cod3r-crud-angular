@@ -1,18 +1,19 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { CommonModule } from "@angular/common";
+import { Component } from "@angular/core";
+import { RouterOutlet } from "@angular/router";
+import { HeaderComponent } from "./components/header/header.component";
 
 @Component({
-  selector: 'app-root',
+  selector: "app-root",
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
   template: `
-    <h1>Welcome to {{title}}!</h1>
+    <app-header></app-header>
 
     <router-outlet></router-outlet>
   `,
   styles: [],
+  imports: [CommonModule, RouterOutlet, HeaderComponent],
 })
 export class AppComponent {
-  title = 'frontend';
+  title = "frontend";
 }
